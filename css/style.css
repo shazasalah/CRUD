@@ -1,0 +1,28 @@
+.background{
+    height: 100vh;
+    background-image:url("bg2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.layer{
+    background-color: rgba(239, 236, 236, 0.549);
+    height: 100vh;
+}
+body{
+    font-family:'Courier New', Courier, monospace
+}
+table{
+    border: solid grey 1px;
+}
+table thead{
+    color:gray;
+}
+.title{
+    /* text-shadow: 2px 2px 4px rgb(154, 154, 243); */
+    text-shadow: 1px 1px 5px rgb(154, 154, 243), 0 0 25px rgb(114, 114, 157), 0 0 5px rgb(29, 29, 43);;
+}
+.labelfrom{
+    color:grey;
+}

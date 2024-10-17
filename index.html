@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Management</title>
+</head>
+<body>
+<div class="background">
+    <div class="layer">
+
+
+    <div class="w-75 m-auto pt-2 ">
+        
+        <h2 class="text-center text-muted display-3 title"> Product Mangement System</h2>
+        <hr class="w-75 m-auto text-center">
+        <hr class="w-50 mt-2 mb-2 m-auto text-center">
+        <hr class="w-25 m-auto text-center">
+
+        <label class="pt-5 labelfrom text-muted fw-semibold" for="productName" class=""> Product Name:</label>
+        <input class="form-control mb-2" type="text" name="productNameInput" id="productName">
+
+        <label class="form-label text-muted fw-semibold" for="productModel"> Product Model:</label>
+        <input class="form-control mb-2" type="text" name="productModelInput" id="productModel">
+
+
+        <label class="form-label text-muted fw-semibold" for="productPrice"> Product Price:</label>
+        <input class="form-control mb-2" type="number" name="productPriceInput" id="productPrice">
+
+
+        <label class="form-label text-muted fw-semibold" for="productDescInput"> Product Description:</label>
+        <input class="form-control mb-2" type="text" name="productDescInput" id="productDescInput">
+
+        <button id= "addBTN" class="btn btn-outline-primary fw-semibold mt-3" onclick="AddProduct()"> Add Product</button><!--onclick event run when js finish running-->
+        <button id="updateBTN" class="btn btn-outline-success mt-3 d-none" onclick="updateProduct()"> Update Product</button>
+    </div>
+    <hr class="w-75 mt-3 m-auto text-center">
+    
+    <div class="m-1">
+        <table class="table table-sm w-75 m-auto text-center table-striped table-hover">
+            <thead class="text-capitalize table-dark opacity-50 fw-semibold">
+                <td> # </td>
+                <td> Product name </td>
+                <td> Product model </td>
+                <td> Product description </td>
+                <td> Product price </td>
+                <td> update</td>
+                <td> delete </td>
+            </thead>
+            <tbody id="tBody">
+                <!-- <tr>
+                    <td> 0 </td>
+                    <td> samsung </td>
+                    <td> t14 </td>
+                    <td> black & sliver </td>
+                    <td> 12000 </td>
+                    <td> <button class="btn btn-outline-warning btn-sm"> Update </button> </td>
+                    <td> <button  class="btn btn-outline-danger btn-sm"> Delete </button> </td>
+                </tr> -->
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
